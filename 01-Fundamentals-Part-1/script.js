@@ -141,4 +141,3 @@ console.log(ageJonas, ageSarah, averageAge);
 
 
 
-
