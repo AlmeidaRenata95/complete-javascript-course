@@ -99,8 +99,8 @@ x--; //subtrai -1
 console.log(x);
 
 */
-
-// Operadores de Comparação
+/*
+ Operadores de Comparação
 const now = 2037; 
 const ageJonas = now - 1991; 
 const ageSarah = now - 2018;
@@ -110,7 +110,7 @@ console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + ' ' + lastName);
-
+,
 let x = 10 + 5;
 x += 10; 
 x *= 4; 
@@ -122,5 +122,23 @@ console.log(x);
 // Operadores de Comparação
 console.log(ageJonas > ageSarah); // Aqui o valor será true, aqui ele compara o resultado que está no programa acima>, <, >= , <=
 console.log(ageSarah >= 18);
+
+*/
+
+//Operator precedence
+const now = 2037; 
+const ageJonas = now - 1991; 
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y; // aqui declaramos uma variável vazia 
+x = y = 25 - 10 - 5; // x = y = 10, x = 10  o JS realizará primeiro os operadores negativos e depois passará para os de igualdade
+console.log(x, y); // 10 10
+
+const averageAge = (ageJonas + ageSarah) / 2 // calculando média de idade entre Jonas e Sarah. soma primeiro o que esta em parenteses e depois a divisão;
+console.log(ageJonas, ageSarah, averageAge);
+
+
 
 
