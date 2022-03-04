@@ -123,7 +123,7 @@ console.log(x);
 console.log(ageJonas > ageSarah); // Aqui o valor será true, aqui ele compara o resultado que está no programa acima>, <, >= , <=
 console.log(ageSarah >= 18);
 
-*/
+
 
 //Operator precedence
 const now = 2037; 
@@ -140,4 +140,38 @@ const averageAge = (ageJonas + ageSarah) / 2 // calculando média de idade entre
 console.log(ageJonas, ageSarah, averageAge);
 
 
+//Strings and template literals
+// construindo strings utilizando templante literals
+const firstName = 'Jonas' ;
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
 
+
+const jonas = "I'm " + firstName + ' , a ' + (year - birthYear) + ' years old ' + job + '!'; // observe que conectamos os valores de year e birthYear
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+console.log(jonasNew);
+
+console.log(`Just a regular string`); //podemos utilizar crase quando formos utilizar string, em geral podemos utilizar apenas crase
+
+//criando strings com vrias linhas, \n\ é utilizado em diversas linguagem de programaçao, mas no JS é possivel fazer da proxima maneira.
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String 
+multiple
+lines`);
+// acima utilizanso string com várias linhas, apenas apertar return no teclado
+*/
+
+// Taking Decision : if / else statements
+
+const age = 19;
+const isOldEnough = age >= 18; // se a idade for maior ele executa o bloco e sarah tira a carteira, se for menor ele não tem saída de dados
+if (isOldEnough) {
+    console.log('Sarah can start driving license');
+
+}
